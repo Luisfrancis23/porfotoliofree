@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luisfranis — Courses & Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <a class="brand" href="#home">luis<span>franis</span>_</a>
+    <nav>
+      <a href="#courses">Courses</a>
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="themeToggle" aria-label="Toggle theme">☀︎</button>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="tag">// courses for builders</p>
+        <h1>Ship products.<br/>Learn by doing.</h1>
+        <p class="sub">Luisfranis is a small org teaching web dev, design systems, and product craft through real client projects.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#courses">View catalog →</a>
+          <a class="btn secondary" href="#about">Meet the studio</a>
+        </div>
+        <ul class="mini-meta" aria-label="Key metrics">
+          <li><strong>4.9/5</strong><span>student rating</span></li>
+          <li><strong>8.2k</strong><span>active learners</span></li>
+          <li><strong>96%</strong><span>course completion</span></li>
+        </ul>
+      </div>
+
+      <div class="hero-panel" aria-label="Course overview preview">
+        <div class="panel-header">
+          <span class="dot dot-green"></span>
+          <span class="dot dot-blue"></span>
+          <span class="dot dot-purple"></span>
+        </div>
+        <div class="panel-body">
+          <div class="panel-badge">Live cohort</div>
+          <h3>Product craft sprint</h3>
+          <div class="progress-wrap">
+            <div class="progress-label">
+              <span>Project momentum</span>
+              <strong>82%</strong>
+            </div>
+            <div class="progress-bar"><span></span></div>
+          </div>
+          <div class="pill-row">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>React</span>
+            <span>Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="courses" class="section">
+    <h2>Course catalog</h2>
+    <div class="grid" id="courseGrid"></div>
+  </section>
+
+  <section id="work" class="section">
+    <h2>Selected work</h2>
+    <div class="grid">
+      <article class="card"><h3>01 / Studio Site</h3><p>+38% signups after a full redesign.</p></article>
+      <article class="card"><h3>02 / Course Platform</h3><p>Custom LMS serving 8k students.</p></article>
+      <article class="card"><h3>03 / Design System</h3><p>Tokens + components shipped in 6 weeks.</p></article>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>Small studio-org pairing real client work with teaching. Every course project is deployable, documented, and open source.</p>
+    <div class="stats">
+      <div><strong>24</strong><span>courses</span></div>
+      <div><strong>8.2k</strong><span>students</span></div>
+      <div><strong>96%</strong><span>completion</span></div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <form onsubmit="event.preventDefault(); this.querySelector('button').textContent='Sent ✓';">
+      <input required placeholder="you@email.com" type="email" />
+      <input required placeholder="What do you want to learn?" />
+      <button class="btn primary" type="submit">Send →</button>
+    </form>
+  </section>
+
+  <footer>© 2026 Luisfranis — build something real.</footer>
+  <script src="app.js"></script>
+</body>
+</html>
